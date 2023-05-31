@@ -2,37 +2,192 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* login page  */
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  font-size: small;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login-div {
+  text-align: center;
+  margin-top: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-div {
+  margin: auto;
+  background-color: whitesmoke;
+  width: 400px;
+  box-shadow: 1px 2px 5px 1px gray;
+  padding: 20px 0px 80px 0px;
+  border-radius: 4px;
+}
+
+.login-form {
+  padding: 18px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+
+.login-form input {
+  background-color: #c9c7c7;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: medium;
+}
+
+.login-form button {
+  padding: 8px 0px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background-color: #4267B2;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.login-form button:hover {
+  background-color: #5583de;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-form input::placeholder {
+  color: #413f3f;
+  text-align: center;
+  font-size: 14px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+h4 {
+  color: gray;
+}
+
+/* navbar */
+.task-app {
+  text-align: center;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  background-color: whitesmoke;
+  box-shadow: 1px 2px 5px 1px gray;
+  height: 5rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.user img {
+  height: 70px;
+  border-radius: 4px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+
+/* dashboard styling */
+
+/* tasks section */
+.tasks {
+  margin: 20px 0px;
+}
+
+.tasks h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.task-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+  cursor: pointer;
+  width: 40vw;
+  background-color: whitesmoke;
+  padding: 3px 20px;
+  border-radius: 4px;
+}
+
+.todo-div:hover {
+  box-shadow: 1px 2px 8px 1px black;
+  transform: scale(1.01);
+  overflow: scroll;
+}
+
+.action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  /* width: 30vw; */
+}
+
+.action img {
+  height: 28px;
+  padding: 4px;
+  margin: 0px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action img:hover {
+  box-shadow: 1px 2px 5px 1px gray;
+}
+
+.action img:nth-child(1) {
+  border: 2px solid #228BE6;
+}
+
+.action img:nth-child(2) {
+  border: 2px solid #DC493B;
+}
+
+/* button styling */
+.create {
+  background-color: darkcyan;
+}
+
+.logout {
+  background-color: brown;
+}
+
+.edit-btn {
+  background-color: #314354;
+}
+
+.delete-btn {
+  background-color: brown;
+}
+
+.hero-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: 100px;
+}
+
+.sorry {
+  text-align: center;
+  margin-top: 100px;
 }
